@@ -8,11 +8,17 @@ import {
   Title,
   Desc,
   Price,
+  AddContainer,
+  AmountContainer,
+  Button,
+  Amount,
 } from "./styles";
 import { Navbar } from "../../components/NavBar";
 import { Announcement } from "../../components/Announcement";
 import { NewsLetter } from "../../components/NewsLetter";
 import { Footer } from "../../components/Footer";
+import {GrAdd} from 'react-icons/gr'
+import {IoIosRemove} from 'react-icons/io'
 
 export const Product = () => {
   return (
@@ -32,6 +38,14 @@ export const Product = () => {
             illum.
           </Desc>
           <Price>R$ 4200</Price>
+          <AddContainer>
+            <AmountContainer>
+              <IoIosRemove />
+              <Amount>1</Amount>
+              <GrAdd />
+            </AmountContainer>
+            <Button>Adicionar ao Carrinho</Button>
+          </AddContainer>
         </InfoContainer>
       </Wrapper>
 
